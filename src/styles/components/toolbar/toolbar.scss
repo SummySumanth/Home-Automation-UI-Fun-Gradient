@@ -1,0 +1,93 @@
+@import '../../variables/gradiants';
+@import '../../variables/colors';
+
+
+.funui-sidebar-container{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 375px;
+    left: 0px;
+    overflow: hidden;
+    background: $top-to-bottom-gradiant;
+    transition: all 600ms 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.22);
+}
+
+.funui-sidebar-container-open{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 375px;
+    overflow: hidden;
+    background: $top-to-bottom-gradiant;
+    transition: all 600ms 0.0s ease-in-out;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.22);
+
+    left: -330px;
+}
+
+.funui-sidebar-toggle-btn-open{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 0px;
+    padding: 10px;
+    transition: all 600ms 0.0s ease-in;
+    transform: scaleX(-1) translateY(-50%);
+}
+
+.funui-sidebar-toggle-btn-close{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 0px;
+    padding: 10px;
+    transform:  translateY(-50%);
+}
+
+.funui-sidebar-bottom-layer{
+    color:white;
+    width: 100%;
+    padding-right: 6%; //To make the scroll bar invisible
+    height: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    text-align: center;
+    transition: all 400ms 0.0s ease-in;
+    opacity: 1;
+    padding-top: 3vh;
+}
+
+.funui-sidebar-bottom-layer-hide{
+    opacity: 0;
+}
+.funui-sidebar-top-lower-layer{
+    background: $top-transparent-to-bottom-gradiant;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+}
+
+.funui-sidebar-top-upper-layer{
+    background: $top-to-bottom-transparent-gradiant;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    z-index: 3;
+}
+
+
+
+@media only screen and (max-width: 412px) {
+    .funui-sidebar-container {
+        width: 160px;
+    }
+    .funui-sidebar-container-open{
+        left: -112px
+    }
+  }

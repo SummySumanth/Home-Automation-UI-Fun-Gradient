@@ -1,0 +1,11 @@
+@import './colors';
+
+$top-to-bottom-gradiant : linear-gradient(to bottom, $top-gradiant-color 0%, $bottom-gradiant-color 100%);
+
+$left-to-right-gradiant : linear-gradient(to right, $top-gradiant-color 0%, $bottom-gradiant-color 100%);
+
+$top-to-bottom-transparent-gradiant : linear-gradient(to bottom, $top-gradiant-color 0%, rgba($top-gradiant-color, 0) 100%); //rgba function to make mobile device gradient non-black-transparent in ios
+
+$top-transparent-to-bottom-gradiant : linear-gradient(to bottom, rgba($bottom-gradiant-color, 0) 0%, $bottom-gradiant-color 100%);
+
+$cross-gradiant : linear-gradient(135deg, rgba(220,251,202,1) 0%, rgba(163,248,252,1) 100%);

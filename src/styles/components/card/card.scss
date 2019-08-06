@@ -1,0 +1,150 @@
+@import '../../variables/gradiants';
+@import '../../variables/colors';
+
+.funui-card{
+    margin: 20% 10%;
+    position: relative;
+    transform: scale(0.9);
+    transition: all 200ms 0.0s ease-in;
+    cursor: pointer;
+}
+
+.funui-card-image{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.funui-card-content-info{
+    color: $header;
+    text-align: left;
+    padding: 35px 0px 35px 55px;
+    margin-left: 80px;
+    height: 46px;
+    width: 155px;;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 200ms 0.0s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.funui-card-image{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.2);
+    width: 110px;
+    height: 110px;
+    top: -10px;
+    left: 0px;
+    border-radius: 2px;
+    transition: all 200ms 0.0s ease-in;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+}
+
+.funui-card-image-icon{
+    color: black;
+    background: $cross-gradiant;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: -87px;
+    left: -300px;
+    box-shadow: 0 10px 52px rgba(0, 0, 0, 0.19), 0 20px 45px rgba(0, 0, 0, 0.23);
+    transition: all 300ms 0s ease-in;
+}
+
+.funui-card-image-icon-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.funui-card-content-header{
+    font-weight: 600;
+}
+
+.funui-card-content-description{
+    display: flex;
+    color: #929292;
+}
+
+
+.funui-card-content-description-in{
+    font-weight: 200;
+}
+
+.funui-card-content-description-value{
+    margin-left: 4px;
+    font-weight: 400;
+}
+
+// HOVER ANIMATION OF CARDS
+
+.funui-card:hover{
+    transform: scale(1.1);
+}
+
+.funui-card:hover .funui-card-content-info{
+    box-shadow: 4px 16px 25px rgba(0, 0, 0, 0.2);
+}
+
+.funui-card:hover .funui-card-image{
+    box-shadow: 4px 16px 25px rgba(0, 0, 0, 0.2);
+}
+
+// USE THIS ON ACTIVE ITEMS TO RETAIN HOVER EFFECT
+.funui-card-active{
+    transform: scale(1.1);
+}
+.funui-card-content-info-active{
+    margin-right: 80px;
+    margin-left: 0px;
+    padding: 35px 0px 35px 55px;
+    box-shadow: 4px 16px 25px rgba(0, 0, 0, 0.2);
+}
+
+.funui-card-image-active{
+    left: 190px;
+    box-shadow: 4px 16px 25px rgba(0, 0, 0, 0.2);
+}
+
+.funui-card-image-icon-active{
+    opacity: 1;
+    left: 90px;
+}
+
+@media only screen and (max-width: 412px) {
+    .funui-card-active {
+        transform: scale(0.8) !important;
+    }
+
+    .funui-card {
+        margin: 20% 0%;
+    }
+    .funui-card-content-info {
+        margin-left: 20px;
+        margin-bottom: 50px;
+        width: 104px;
+        height: 48px;
+        padding: 60px 0px 10px 10px;
+        justify-content: flex-end;
+    }
+    .funui-card-content-header {
+        font-weight: 600;
+        font-size: 9pt;
+    }
+    .funui-card-image-active {
+        left: 50px;
+    }
+    .funui-card-image-icon-active {
+        opacity: 1;
+        left: 60px;
+    }
+    .funui-card-content-description{
+        display: none;
+    }
+    .funui-card-image{
+        top: -30px;
+    }
+}

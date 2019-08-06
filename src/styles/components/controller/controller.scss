@@ -1,0 +1,298 @@
+@import '../../variables/gradiants';
+@import '../../variables/colors';
+
+.funui-controller-main-container{
+  margin-left: 419px;
+  margin-right: 60px;
+  height: 100vh;
+  justify-content: space-around;
+  transition: all 600ms 0.0s ease-in;
+}
+
+.funui-controller-main-container-expanded{
+  margin-left: 100px;
+}
+
+.funui-controllers-container{
+  opacity: 0;
+  transition: all 400ms 0.0s ease-in;
+}
+.funui-controllers-container-active{
+  opacity: 1;
+}
+
+.funui-controller-title-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.funui-controller-title-text{
+  font-weight: 600;
+  font-size: 40pt;
+}
+
+.funui-controller-title{
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.funui-controller-title-plus-btn{
+  background: linear-gradient(135deg, #dcfbca 0%, #a3f8fc 100%);
+  width: 50px;
+  height: 50px;
+  transition: all 300ms 0s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.funui-controller-title-plus-btn:hover .funui-controller-title-plus-btn-img{
+  cursor: pointer;
+  transition: all 400ms 0.0s ease-in;
+  transform: rotate(180deg);
+}
+
+
+.funui-controller-main-switch{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.funui-controller-switch-text{
+  font-weight: 600;
+  font-size: 25pt;
+}
+
+//TOGGLE BUTTON
+
+.funui-controller-main-switch-togglebtn {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.funui-controller-main-switch-togglebtn input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s
+}
+
+input:checked + .slider {
+  background-color: #121212;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+// SHADE SELECTOR
+.funui-controller-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.funui-controller-header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.funui-controller-header {
+  font-weight: 600;
+  font-size: 13pt;
+  color: $top-gradiant-color;
+}
+
+.funui-controller-header-line{
+  flex: 1;
+  background: linear-gradient(to right, #ac69f8 0%, #74bbf7 100%);
+  height: 1px;
+  margin-left: 17px;
+}
+
+.funui-controller-shade-selector-buttons-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.funui-controller-shade-selector-button{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: all 200ms 0.0s ease-in;
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.funui-controller-shade-selector-button:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 26px 36px 0px rgba(0, 0, 0, 0.14);
+}
+
+.funui-controller-shade-selector-button-active {
+  transform: scale(1.2);
+  box-shadow: 0px 26px 36px 0px rgba(0, 0, 0, 0.14);
+}
+
+.funui-controller-shade-selector-btn-icon{
+  opacity: 0;
+  transition: all 200ms 0.0s ease-in;
+}
+
+.funui-controller-shade-selector-btn-icon-active{
+  opacity: 1;
+}
+
+.funui-controller-mode-selector-buttons-container{
+  margin-bottom: 30px;
+}
+
+.funui-controller-mode-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 18px;
+  transition: all 200ms 0.0s ease-in;
+}
+
+.funui-controller-mode-button-active{
+  background: $left-to-right-gradiant;
+  color: #fff;
+  box-shadow: 0px 26px 36px 0px rgba(0, 0, 0, 0.14);
+  transform: scale(1.04);
+}
+
+.funui-controller-mode-TOD{
+  display: flex;
+  align-items: center;
+}
+
+.funui-controller-mode-TOD-img{
+  margin: 0px 10px;
+}
+
+.funui-controller-mode-TOD-img-active{
+  filter: invert(1);
+}
+
+.funui-controler-mode-tick{
+  filter: invert(1);
+  opacity: 0.2;
+}
+
+.funui-controler-mode-percent{
+  opacity: 0.4;
+}
+
+.rs-control .rs-range-color {
+  background: $left-to-right-gradiant;
+}
+.rs-control .rs-path-color {
+  background-color: #c1c6ce;
+}
+.rs-control .rs-handle {
+  background: $top-to-bottom-gradiant;
+}
+.rs-control .rs-bg-color {
+  background-color: white;
+}
+
+.half.top .rs-tooltip, .half.bottom .rs-tooltip {
+  left: 50%;
+  font-size: 34px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 412px) {
+  .funui-controller-main-container{
+    margin-left: 165px;
+    margin-right: 10px;
+  }
+  .funui-controller-main-container-expanded {
+    margin-left: 65px;
+    margin-right: 20px;
+  }
+  .funui-controller-title{
+    margin: 10px 0px 50px 0px;
+  }
+  .funui-controller-title-text {
+    font-weight: 600;
+    font-size: 20pt;
+  }
+  .funui-controller-title-plus-btn{
+    width: 30px;
+    height: 30px;
+  }
+  .funui-controller-switch-text {
+    font-weight: 600;
+    font-size: 14pt;
+  }
+  .funui-controller-header{
+    font-size: 10pt;
+  }
+  .funui-controller-shade-selector-buttons-container {
+    flex-flow: row wrap;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .funui-controller-shade-selector-button{
+    margin: 10px;
+  }
+  .funui-controler-mode-percent-visiblity{
+    display: none;
+  }
+  .funui-controller-mode-button{
+    padding: 10px;
+  }
+}
