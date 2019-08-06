@@ -9,7 +9,7 @@ import ClassNames from 'classnames';
 class Controller extends Component{
 
   state = {
-    shades : [ // constant file
+    shades : [
       {
         id: 1,
         color: '#ed4161',
