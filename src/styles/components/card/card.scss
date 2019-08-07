@@ -114,7 +114,9 @@
     left: 90px;
 }
 
-@media only screen and (max-width: 412px) {
+
+
+@media only screen and (max-width: 420px) {
     .funui-card-active {
         transform: scale(0.8) !important;
     }
@@ -139,7 +141,7 @@
     }
     .funui-card-image-icon-active {
         opacity: 1;
-        left: 60px;
+        left: 90px;
     }
     .funui-card-content-description{
         display: none;
@@ -148,3 +150,43 @@
         top: -30px;
     }
 }
+
+@media only screen and (max-width: 770px) and (min-width: 420px) {
+    .funui-card-active {
+        transform: scale(0.8) !important;
+    }
+
+    .funui-card {
+        margin: 20% 0%;
+    }
+
+    .funui-card-content-info {
+        margin-left: 20px;
+        margin-bottom: 50px;
+        width: 104px;
+        height: 48px;
+        padding: 60px 0px 10px 10px;
+        justify-content: flex-end;
+    }
+    .funui-card-content-info-active {
+        opacity: 0;
+    }
+    .funui-card-content-header {
+        font-weight: 600;
+        font-size: 9pt;
+    }
+    .funui-card-image-active {
+        left: 50px;
+    }
+    .funui-card-image-icon-active {
+        opacity: 1;
+        left: 90px;
+    }
+    .funui-card-content-description{
+        display: none;
+    }
+    .funui-card-image{
+        top: -30px;
+    }
+}
+

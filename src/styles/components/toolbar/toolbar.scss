@@ -83,7 +83,16 @@
 
 
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 770px) and (min-width: 420px)  {
+    .funui-sidebar-container {
+        width: 160px;
+    }
+    .funui-sidebar-container-open{
+        left: -112px
+    }
+  }
+
+@media only screen and (max-width: 420px) {
     .funui-sidebar-container {
         width: 160px;
     }
