@@ -1,6 +1,6 @@
 To view the project directly,
 
-[Click Here](http://homeautomation.surge.sh)
+[Click Here](http://homeautomation.surge.sh){:target="_blank" rel="noopener"}
 
 In the project directory, you can run:
 
