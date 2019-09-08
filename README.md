@@ -11,4 +11,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ## UI views
-![alt text](http://url/to/img.png)
+
+### Desktop
+![alt text](https://raw.githubusercontent.com/SummySumanth/Home-Automation-UI-Fun-Gradient-/master/readmeImages/desktop.png)
+
+### IPad
+![alt text](https://raw.githubusercontent.com/SummySumanth/Home-Automation-UI-Fun-Gradient-/master/readmeImages/ipadview.png)
+
+### IPhone
+![alt text](https://raw.githubusercontent.com/SummySumanth/Home-Automation-UI-Fun-Gradient-/master/readmeImages/iphoneview.png)
